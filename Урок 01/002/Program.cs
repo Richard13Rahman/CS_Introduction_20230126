@@ -1,11 +1,10 @@
-﻿// С клавиатуры вводятся два вещественных числа. Проверять является ли одно из них квадратом второго
+﻿//2. С клавиатуры вводятся два вещественных числа. Проверять является ли одно из них квадратом второго
 
 double a,b;
-string? s;
-s=Console.ReadLine();
-a=Convert.ToDouble(s);
-s=Console.ReadLine();
-b=Convert.ToDouble(s);
+System.Console.Write("Введите число а:");
+a=Convert.ToDouble(Console.ReadLine());
+System.Console.Write("Введите число b:");
+b=Convert.ToDouble(Console.ReadLine());
 
 if (a*a==b)
     System.Console.WriteLine($"{b} является квадратом {a}");
