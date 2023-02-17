@@ -22,3 +22,7 @@ void Pause()
 {
     Console.ReadKey();
 }
+
+//Сигнатура метода
+//double (double,double,double,double)
+//void()
