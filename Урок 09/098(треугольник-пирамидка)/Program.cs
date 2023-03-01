@@ -32,7 +32,7 @@ int[,] Triangle_Pascal(int n)
 
 void Print_2D_array(int[,] a)
 {
-    int y=(int)Math.Log10(a.Cast<int>().Max()) + 1;
+    int y=(int)Math.Log10(a.Cast<int>().Max())+1;
     if (y==1)
     {
         for(int i=0;i<a.GetLength(0);i++)
