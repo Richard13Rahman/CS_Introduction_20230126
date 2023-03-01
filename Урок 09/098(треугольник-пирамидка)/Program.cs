@@ -8,14 +8,14 @@ Print_2D_array(a);
 int[,] Triangle_Pascal(int n)
 {
     int[,] a=new int[n,n*2];
-    for (int i=0;i<n;i++)
+    for (int i=0;i<a.GetLength(0);i++)
     {
         if (i==0) a[i,n]=1;
         else
         {
-            for (int j=0;j<n*2;j++)
+            for (int j=0;j<a.GetLength(1);j++)
             {
-                if(j!=0 && j!=n*2-1)
+                if(j!=0 && j!=a.GetLength(1)-1)
                     a[i,j]=a[i-1,j-1]+a[i-1,j+1];
                 else
                 {
